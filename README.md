@@ -213,6 +213,11 @@ For when you want the numbers, not the integration:
   automatically. No key, no registration.
 - **[eic-codes](https://github.com/whipeeer-creator/eic-codes)** — the bidding
   zone codes every API above expects, as CSV and JSON.
+- **[Live day-ahead prices](https://progrunners.com/european-electricity-prices/)** —
+  today's prices for 38 zones in a table, refreshed through the day, with a
+  page per market in the local language and currency: Spain, Germany, Austria,
+  Estonia, Finland, Sweden, Norway, Denmark, Lithuania, Latvia, the
+  Netherlands, Poland, France, Italy, Slovenia and Czechia.
 - **[Open Power System Data](https://open-power-system-data.org)** — curated
   research datasets for Europe. Excellent, but no longer updated past 2020.
 - **[Energy-Charts](https://www.energy-charts.info)** — Fraunhofer ISE, public
