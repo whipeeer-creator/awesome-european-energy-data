@@ -209,7 +209,8 @@ a name and a link.
 For when you want the numbers, not the integration:
 
 - **[european-power-prices](https://github.com/whipeeer-creator/european-power-prices)** —
-  day-ahead prices for 12 zones since 2022, daily CSV, updated automatically.
+  day-ahead prices for 39 bidding zones since 2022, daily CSV, updated
+  automatically. No key, no registration.
 - **[eic-codes](https://github.com/whipeeer-creator/eic-codes)** — the bidding
   zone codes every API above expects, as CSV and JSON.
 - **[Open Power System Data](https://open-power-system-data.org)** — curated
@@ -237,6 +238,10 @@ For when you want the numbers, not the integration:
 - Country-by-country guides on
   [progrunners.com](https://progrunners.com/entso-e-api/) — the longer form of
   several entries above, written while integrating them.
+- **[aFRR and mFRR explained](https://progrunners.com/afrr-mfrr/)** — what the
+  balancing reserves are, how often they are really activated and what
+  balancing energy costs, with figures measured on a month of ČEPS data
+  rather than definitions.
 
 ## Contributing
 
