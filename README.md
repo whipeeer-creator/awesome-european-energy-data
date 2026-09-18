@@ -260,3 +260,13 @@ vendors without a free tier, and links with no description.
 ## Licence
 
 [CC0](LICENSE) — public domain.
+
+---
+
+Maintained by [progrunners](https://progrunners.com/open-source/) — we build
+trading dashboards and market data pipelines for European power markets, and
+publish the parts that are useful on their own.
+
+**All of it in one place:** [progrunners.com/open-source](https://progrunners.com/open-source/)
+— six repositories, what each one is for, and the one mistake worth reading
+about before you trust any price series, ours included.
