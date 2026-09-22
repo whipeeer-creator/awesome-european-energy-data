@@ -37,6 +37,8 @@ a name and a link.
   errors arrive as XML with HTTP 200; forecasts are versioned, so what the API
   returns today is **not** what was published back then — using it as a model
   feature is look-ahead bias.
+  *No code:* the website exports CSV and XLSX with a free account —
+  [where everything is and how to download it](https://progrunners.com/entso-e-transparency-platform/).
 
 - **[EEX Transparency](https://www.eex-transparency.com)** — REMIT publications:
   generation unit outages, installed capacity, actual output per unit. The place
@@ -48,6 +50,20 @@ a name and a link.
 - **[Nord Pool](https://www.nordpoolgroup.com/en/Market-data1/)** — the Nordic
   and Baltic exchange, plus its own view of coupled continental zones.
   *Access:* free web tables; the API is commercial.
+  *Free alternative:* the zonal day-ahead prices come from the coupled SDAC
+  auction and are on ENTSO-E —
+  [nordpool-day-ahead](https://github.com/whipeeer-creator/nordpool-day-ahead)
+  fetches all 15 Nordic and Baltic zones;
+  [today's prices](https://progrunners.com/nord-pool-day-ahead-prices/).
+
+- **[EPEX SPOT](https://www.epexspot.com)** — day-ahead and continuous intraday
+  exchange for much of Western Europe, including Germany, France, the
+  Netherlands, Belgium, Austria, Switzerland and Great Britain.
+  *Access:* current results on the website; history, intraday trades, indices
+  such as ID3 and API access are paid data services.
+  *Free alternative:* day-ahead zonal prices for coupled EU zones via ENTSO-E.
+  *Traps:* Switzerland and Great Britain run separate day-ahead auctions outside
+  EU coupling. [What is free and what is not](https://progrunners.com/epex-spot-data/).
 
 - **[JAO](https://www.jao.eu)** — cross-border capacity allocation for Core and
   the other regions. Auction results, ATC, flow-based domains.
@@ -157,6 +173,11 @@ a name and a link.
   four, Denmark two — and DK1 is synchronous with continental Europe while DK2
   is synchronous with the Nordic system. Averaging them hides spreads of several
   hundred percent.
+- **Hydro reservoir levels** — weekly aggregated filling rate per country on the
+  ENTSO-E Transparency Platform; [NVE](https://www.nve.no) publishes weekly
+  reservoir statistics for Norway and [Energiföretagen](https://www.energiforetagen.se)
+  for Sweden. Compare with the same week in earlier years, not the previous week.
+  More in the [Nordic market data guide](https://progrunners.com/market-data/nordics/).
 
 ## Poland
 
@@ -231,13 +252,17 @@ For when you want the numbers, not the integration:
   single file, no dependencies, for scheduled jobs where pandas is overkill.
 - **[entsoe-client](https://github.com/FHof/entsoe-client)** — alternative
   Python client.
+- **[nordpool-day-ahead](https://github.com/whipeeer-creator/nordpool-day-ahead)** —
+  Nord Pool day-ahead prices for the 15 Nordic and Baltic zones from ENTSO-E,
+  one file, no subscription.
 - **[epftoolbox](https://github.com/jeslago/epftoolbox)** — benchmarks and
   models for electricity price forecasting.
 
 ## Reading
 
-- **[ENTSO-E Transparency manual](https://transparency.entsoe.eu/content/static_content/Static%20content/knowledge%20base/knowledge%20base.html)** —
-  what each document type actually contains.
+- **[ENTSO-E Transparency Platform RESTful API documentation](https://documenter.getpostman.com/view/7009892/2s93JtP3F6)** —
+  ENTSO-E's own Postman collection, one example request per document type. It
+  replaced the old static user guide, whose links now return errors.
 - **[ACER market monitoring reports](https://www.acer.europa.eu)** — how the
   markets behaved, annually, with the definitions spelled out.
 - Country-by-country guides on
@@ -268,5 +293,5 @@ trading dashboards and market data pipelines for European power markets, and
 publish the parts that are useful on their own.
 
 **All of it in one place:** [progrunners.com/open-source](https://progrunners.com/open-source/)
-— six repositories, what each one is for, and the one mistake worth reading
+— seven repositories, what each one is for, and the one mistake worth reading
 about before you trust any price series, ours included.
