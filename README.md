@@ -229,9 +229,9 @@ a name and a link.
 
 For when you want the numbers, not the integration:
 
-- **[european-power-prices](https://github.com/whipeeer-creator/european-power-prices)** —
-  day-ahead prices for 39 bidding zones since 2022, daily CSV, updated
-  automatically. No key, no registration.
+- **[European electricity prices](https://progrunners.com/european-electricity-prices/)** —
+  today's and tomorrow's day-ahead prices for all European bidding zones,
+  no key, no registration.
 - **[eic-codes](https://github.com/whipeeer-creator/eic-codes)** — the bidding
   zone codes every API above expects, as CSV and JSON.
 - **[Live day-ahead prices](https://progrunners.com/european-electricity-prices/)** —
